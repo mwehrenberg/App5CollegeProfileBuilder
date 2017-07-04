@@ -74,13 +74,6 @@
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="soA-hz-dzC">
-                                <rect key="frame" x="22" y="216" width="200" height="200"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="19f-x6-zI8"/>
-                                    <constraint firstAttribute="width" constant="200" id="tIf-9d-ury"/>
-                                </constraints>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j04-wD-bGz">
                                 <rect key="frame" x="301" y="93" width="46" height="30"/>
                                 <constraints>
@@ -94,10 +87,17 @@
                                     <action selector="onTappedSaveButton:" destination="JEX-9P-axG" eventType="touchUpInside" id="o6H-tf-UVv"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="soA-hz-dzC">
+                                <rect key="frame" x="87" y="233" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="I9D-Mw-hkt"/>
+                                    <constraint firstAttribute="width" constant="200" id="lju-2H-ABz"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="soA-hz-dzC" firstAttribute="centerY" secondItem="svH-Pt-448" secondAttribute="centerY" constant="-17.5" id="EK1-Ck-QRO"/>
+                            <constraint firstItem="soA-hz-dzC" firstAttribute="centerY" secondItem="svH-Pt-448" secondAttribute="centerY" id="DDI-Ar-iQ8"/>
                             <constraint firstItem="j04-wD-bGz" firstAttribute="centerY" secondItem="svH-Pt-448" secondAttribute="centerY" constant="-225.5" id="HZE-W5-Yht"/>
                             <constraint firstItem="eZL-2K-2CD" firstAttribute="top" secondItem="SYR-Wa-9uf" secondAttribute="bottom" id="J4H-58-bx7"/>
                             <constraint firstItem="eZL-2K-2CD" firstAttribute="leading" secondItem="svH-Pt-448" secondAttribute="leading" id="KlA-Q0-dC7"/>
@@ -105,7 +105,7 @@
                             <constraint firstItem="SoT-3y-w9G" firstAttribute="centerY" secondItem="svH-Pt-448" secondAttribute="centerY" constant="-224.5" id="WXA-LX-CM4"/>
                             <constraint firstItem="mWN-Bq-cCg" firstAttribute="centerY" secondItem="svH-Pt-448" secondAttribute="centerY" constant="-148.5" id="Xml-46-1Q5"/>
                             <constraint firstItem="qmV-jl-UFH" firstAttribute="centerY" secondItem="svH-Pt-448" secondAttribute="centerY" constant="-186.5" id="c0R-PH-EP0"/>
-                            <constraint firstItem="soA-hz-dzC" firstAttribute="centerX" secondItem="svH-Pt-448" secondAttribute="centerX" constant="-65.5" id="hEA-bU-jCn"/>
+                            <constraint firstItem="soA-hz-dzC" firstAttribute="centerX" secondItem="svH-Pt-448" secondAttribute="centerX" id="isi-H1-0OR"/>
                             <constraint firstItem="mWN-Bq-cCg" firstAttribute="centerX" secondItem="svH-Pt-448" secondAttribute="centerX" constant="-65.5" id="qYI-TI-Hl4"/>
                             <constraint firstAttribute="trailing" secondItem="eZL-2K-2CD" secondAttribute="trailing" id="r7K-G8-ePf"/>
                             <constraint firstItem="GAO-Cl-Wes" firstAttribute="top" secondItem="eZL-2K-2CD" secondAttribute="bottom" id="s2x-7w-6Nu"/>
@@ -114,7 +114,7 @@
                         </constraints>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Detail" id="mOI-FS-AaM"/>
+                    <navigationItem key="navigationItem" title="College Details" id="mOI-FS-AaM"/>
                     <connections>
                         <outlet property="enrollmentTextField" destination="mWN-Bq-cCg" id="5Vm-ro-XfG"/>
                         <outlet property="imageView" destination="soA-hz-dzC" id="UQp-8g-MHw"/>
@@ -149,7 +149,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="Arm-wq-HPj" style="IBUITableViewCellStyleDefault" id="WCw-Qf-5nD">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="gray" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="Arm-wq-HPj" style="IBUITableViewCellStyleDefault" id="WCw-Qf-5nD">
                                 <rect key="frame" x="0.0" y="22" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WCw-Qf-5nD" id="37f-cq-3Eg">
@@ -165,7 +165,6 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <segue destination="vC3-pB-5Vb" kind="showDetail" identifier="showDetail" id="6S0-TO-JiA"/>
                                 </connections>
@@ -177,7 +176,7 @@
                             <outlet property="delegate" destination="7bK-jq-Zjz" id="RA6-mI-bju"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Master" id="Zdf-7t-Un8"/>
+                    <navigationItem key="navigationItem" title="Colleges" id="Zdf-7t-Un8"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rux-fX-hf1" sceneMemberID="firstResponder"/>
             </objects>
