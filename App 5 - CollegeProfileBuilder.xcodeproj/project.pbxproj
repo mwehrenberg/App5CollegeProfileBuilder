@@ -15,6 +15,11 @@
 		52333E381F0AC0D0008D718E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52333E361F0AC0D0008D718E /* LaunchScreen.storyboard */; };
 		52333E431F0AC0D0008D718E /* App_5___CollegeProfileBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52333E421F0AC0D0008D718E /* App_5___CollegeProfileBuilderTests.swift */; };
 		52333E4E1F0AC0D1008D718E /* App_5___CollegeProfileBuilderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52333E4D1F0AC0D1008D718E /* App_5___CollegeProfileBuilderUITests.swift */; };
+		52333E5D1F0AC130008D718E /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52333E5B1F0AC130008D718E /* Realm.framework */; };
+		52333E5E1F0AC130008D718E /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 52333E5B1F0AC130008D718E /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		52333E5F1F0AC130008D718E /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52333E5C1F0AC130008D718E /* RealmSwift.framework */; };
+		52333E601F0AC130008D718E /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 52333E5C1F0AC130008D718E /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		52333E631F0B4064008D718E /* College.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52333E621F0B4064008D718E /* College.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +39,21 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		52333E611F0AC130008D718E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				52333E601F0AC130008D718E /* RealmSwift.framework in Embed Frameworks */,
+				52333E5E1F0AC130008D718E /* Realm.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		52333E281F0AC0D0008D718E /* App 5 - CollegeProfileBuilder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "App 5 - CollegeProfileBuilder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		52333E2B1F0AC0D0008D718E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +69,9 @@
 		52333E491F0AC0D1008D718E /* App 5 - CollegeProfileBuilderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "App 5 - CollegeProfileBuilderUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		52333E4D1F0AC0D1008D718E /* App_5___CollegeProfileBuilderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App_5___CollegeProfileBuilderUITests.swift"; sourceTree = "<group>"; };
 		52333E4F1F0AC0D1008D718E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52333E5B1F0AC130008D718E /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		52333E5C1F0AC130008D718E /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
+		52333E621F0B4064008D718E /* College.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = College.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +79,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52333E5F1F0AC130008D718E /* RealmSwift.framework in Frameworks */,
+				52333E5D1F0AC130008D718E /* Realm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +104,8 @@
 		52333E1F1F0AC0D0008D718E = {
 			isa = PBXGroup;
 			children = (
+				52333E5B1F0AC130008D718E /* Realm.framework */,
+				52333E5C1F0AC130008D718E /* RealmSwift.framework */,
 				52333E2A1F0AC0D0008D718E /* App 5 - CollegeProfileBuilder */,
 				52333E411F0AC0D0008D718E /* App 5 - CollegeProfileBuilderTests */,
 				52333E4C1F0AC0D1008D718E /* App 5 - CollegeProfileBuilderUITests */,
@@ -102,6 +129,7 @@
 				52333E2B1F0AC0D0008D718E /* AppDelegate.swift */,
 				52333E2D1F0AC0D0008D718E /* MasterViewController.swift */,
 				52333E2F1F0AC0D0008D718E /* DetailViewController.swift */,
+				52333E621F0B4064008D718E /* College.swift */,
 				52333E311F0AC0D0008D718E /* Main.storyboard */,
 				52333E341F0AC0D0008D718E /* Assets.xcassets */,
 				52333E361F0AC0D0008D718E /* LaunchScreen.storyboard */,
@@ -138,6 +166,7 @@
 				52333E241F0AC0D0008D718E /* Sources */,
 				52333E251F0AC0D0008D718E /* Frameworks */,
 				52333E261F0AC0D0008D718E /* Resources */,
+				52333E611F0AC130008D718E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -265,6 +294,7 @@
 				52333E301F0AC0D0008D718E /* DetailViewController.swift in Sources */,
 				52333E2E1F0AC0D0008D718E /* MasterViewController.swift in Sources */,
 				52333E2C1F0AC0D0008D718E /* AppDelegate.swift in Sources */,
+				52333E631F0B4064008D718E /* College.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,7 +446,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "App 5 - CollegeProfileBuilder/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Molly.App-5---CollegeProfileBuilder";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -428,7 +463,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "App 5 - CollegeProfileBuilder/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Molly.App-5---CollegeProfileBuilder";
 				PRODUCT_NAME = "$(TARGET_NAME)";
