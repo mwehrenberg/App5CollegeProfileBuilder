@@ -9,9 +9,9 @@
 import UIKit
 import RealmSwift
 
-class DetailViewController: UIViewController {
+class DetailViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
-    
+    let imagePicker = UIImagePickerController()
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var locationTextField: UITextField!
     @IBOutlet weak var enrollmentTextField: UITextField!
@@ -29,6 +29,7 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureView()
+        imagePicker.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -45,6 +46,18 @@ class DetailViewController: UIViewController {
                 websiteTextField.text = college.websiteUrl
             }
         }
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        imagePicker.dismiss(animated: true) {
+            let selectedImage = info[UIImagePickerControllerOriginalImage] as! UIImage
+            self.imageView.image = selectedImage
+        }
+    }
+    
+    @IBAction func onChangeImageButton(_ sender: Any) {
+        imagePicker.sourceType = UIImagePickerControllerSourceType.photoLibrary
+        present(imagePicker, animated: true, completion: nil)
     }
     
     @IBAction func onGoButtonToSafari(_ sender: Any) {
