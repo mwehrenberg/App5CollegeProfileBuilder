@@ -81,6 +81,9 @@
                                     <constraint firstAttribute="width" constant="46" id="Rnb-DO-d5v"/>
                                 </constraints>
                                 <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="onTappedSaveButton:" destination="JEX-9P-axG" eventType="touchUpInside" id="o6H-tf-UVv"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -99,6 +102,12 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Detail" id="mOI-FS-AaM"/>
+                    <connections>
+                        <outlet property="enrollmentTextField" destination="mWN-Bq-cCg" id="5Vm-ro-XfG"/>
+                        <outlet property="imageView" destination="soA-hz-dzC" id="UQp-8g-MHw"/>
+                        <outlet property="locationTextField" destination="qmV-jl-UFH" id="ZCN-7J-Ss4"/>
+                        <outlet property="nameTextField" destination="SoT-3y-w9G" id="J5D-Nb-fqv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FJe-Yq-33r" sceneMemberID="firstResponder"/>
             </objects>
