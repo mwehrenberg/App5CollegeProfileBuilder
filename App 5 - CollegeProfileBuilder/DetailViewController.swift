@@ -24,17 +24,14 @@ class DetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         configureView()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     func configureView() {
-        // Update the user interface for the detail item.
         if let college = self.detailItem {
             if nameTextField != nil {
                 nameTextField.text = college.name
@@ -50,7 +47,7 @@ class DetailViewController: UIViewController {
         if let college = self.detailItem {
             college.name = nameTextField.text!
             college.location = locationTextField.text!
-            college.enrollment = Double(enrollmentTextField.text!)!
+            college.enrollment = Int(enrollmentTextField.text!)!
             college.image = UIImagePNGRepresentation(imageView.image!)!
         }
     }

@@ -59,7 +59,7 @@ class MasterViewController: UITableViewController {
                     print("missing \(nameTextField.text!) image")
                     return
             }
-            if let enrollment = Double(enrollmentTextField.text!) {
+            if let enrollment = Int(enrollmentTextField.text!) {
                 let college = College(name: nameTextField.text!, location: locationTextField.text!, enrollment: enrollment, image: UIImagePNGRepresentation(image)!)
                 self.objects.append(college)
                 self.tableView.reloadData()
