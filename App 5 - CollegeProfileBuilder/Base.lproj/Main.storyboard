@@ -37,6 +37,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="corkboard" translatesAutoresizingMaskIntoConstraints="NO" id="eZL-2K-2CD">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="603" id="Nw5-8c-s1s"/>
+                                    <constraint firstAttribute="width" constant="375" id="kdi-3q-luX"/>
+                                </constraints>
+                            </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Location" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qmV-jl-UFH">
                                 <rect key="frame" x="112" y="136" width="150" height="30"/>
                                 <constraints>
@@ -95,9 +102,11 @@
                             <constraint firstItem="j04-wD-bGz" firstAttribute="centerY" secondItem="svH-Pt-448" secondAttribute="centerY" constant="121.5" id="Q9T-o5-Goh"/>
                             <constraint firstItem="j04-wD-bGz" firstAttribute="centerX" secondItem="svH-Pt-448" secondAttribute="centerX" id="VIO-AN-6WR"/>
                             <constraint firstItem="mWN-Bq-cCg" firstAttribute="centerX" secondItem="svH-Pt-448" secondAttribute="centerX" id="XzL-Ls-dQt"/>
+                            <constraint firstItem="eZL-2K-2CD" firstAttribute="centerX" secondItem="svH-Pt-448" secondAttribute="centerX" id="iBO-za-nyE"/>
                             <constraint firstItem="mWN-Bq-cCg" firstAttribute="centerY" secondItem="svH-Pt-448" secondAttribute="centerY" constant="-144.5" id="mcD-ni-6Rv"/>
                             <constraint firstItem="qmV-jl-UFH" firstAttribute="centerY" secondItem="svH-Pt-448" secondAttribute="centerY" constant="-182.5" id="n50-fd-m1R"/>
                             <constraint firstItem="SoT-3y-w9G" firstAttribute="centerX" secondItem="svH-Pt-448" secondAttribute="centerX" id="v9p-tN-Wwf"/>
+                            <constraint firstItem="eZL-2K-2CD" firstAttribute="centerY" secondItem="svH-Pt-448" secondAttribute="centerY" constant="32" id="w1j-7V-zg0"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
@@ -111,7 +120,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FJe-Yq-33r" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="709" y="129"/>
+            <point key="canvasLocation" x="708" y="128.18590704647679"/>
         </scene>
         <!--Split View Controller-->
         <scene sceneID="Nki-YV-4Qg">
@@ -187,6 +196,9 @@
             <point key="canvasLocation" x="-45" y="129"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="corkboard" width="640" height="960"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="6S0-TO-JiA"/>
     </inferredMetricsTieBreakers>
