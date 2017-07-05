@@ -78,5 +78,10 @@ class DetailViewController: UIViewController, UIImagePickerControllerDelegate, U
         }
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let dvc = segue.destination as! MapViewController
+        dvc.searchLocation = nameTextField.text!
+    }
+    
 }
 
