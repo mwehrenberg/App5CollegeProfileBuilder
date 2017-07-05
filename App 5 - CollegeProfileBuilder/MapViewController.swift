@@ -73,4 +73,5 @@ class MapViewController: UIViewController, UISearchBarDelegate {
         searchController.searchBar.delegate = self
         present(searchController, animated: true, completion: nil)
     }
+    
 }

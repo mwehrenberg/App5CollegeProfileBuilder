@@ -18,7 +18,6 @@ class MasterViewController: UITableViewController {
         self.realm.objects(College.self)
     }()
 
-
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.leftBarButtonItem = editButtonItem
@@ -85,8 +84,6 @@ class MasterViewController: UITableViewController {
         present(alert, animated: true, completion: nil)
     }
 
-    // MARK: - Segues
-
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDetail" {
             if let indexPath = tableView.indexPathForSelectedRow {
@@ -99,10 +96,6 @@ class MasterViewController: UITableViewController {
         }
     }
     
-    
-
-    // MARK: - Table View
-
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -119,7 +112,6 @@ class MasterViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
         return true
     }
 
@@ -130,11 +122,10 @@ class MasterViewController: UITableViewController {
                 self.realm.delete(college)
             }
             tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
+        }
+        else if editingStyle == .insert {
         }
     }
-
 
 }
 

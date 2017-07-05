@@ -24,4 +24,5 @@ class College: Object {
         self.image = image
         self.websiteUrl = websiteUrl
     }
+    
 }
